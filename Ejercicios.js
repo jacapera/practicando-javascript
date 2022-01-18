@@ -18,13 +18,21 @@ function agregar(arr, num) {
 - Valor del descuento aplicado al artículo (24%)
 - Valor final del artículo al restar el valor del descuento
 */
-function aplicarDescuento(precio=prompt("Ingresa el valor de tu articulo")){
-    const descuento = (precio * 24) / 100;
+/*function aplicarDescuento(precio=prompt("Ingresa el valor de tu articulo")){
+    descuento = (precio * 24) / 100;
     const precioFinal = precio - descuento;
     console.log(`Valor del artículo: $${precio}`);
     console.log(`Valor del descuento: $${descuento}`);
     console.log(`Valor final: $${precioFinal}`);
     return precioFinal;
+}*/
+function calcularDescuentoArticulo(){
+  const valorArticulo = document.getElementById("valorArticulo");
+  const articuloValue = valorArticulo.value;
+  descuento = (articuloValue * 24) / 100;
+  const precioFinal = articuloValue - descuento;
+  const resulEjercicio3 = document.getElementById("resulEjercicio3");
+  resulEjercicio3.innerText = "Su descuento fue de: $" + descuento + "\n Valor Final es: $" + precioFinal;
 }
 //  console.log(aplicarDescuento());
 
@@ -78,15 +86,20 @@ calcularImpuestos(17, 5000) // retorna 0*/
 
 function calcularImpuestos(){
   let edad = prompt("Ingrese su edad");
-  let ingresos = prompt("Ingrese sus ingresos");
+  let ingresos = prompt("Digite sus ingresos");
   if(edad >= 18 && ingresos >= 1000){
     const retornar = (ingresos * 40) / 100;
+    console.log("La edad que ingreso es: "+edad);
+    console.log("El valor de sus ingresos es: "+ingresos);
     console.log("Tiene que pagar de impuesto: ", retornar);
     return retornar;
   }else {
+    console.log("La edad que ingreso es: "+edad);
+    console.log("El valor de ingresos es: "+ingresos);
     console.log("Aun no tiene que pagar impuestos");
     return 0;
   }
+  
 }
 //calcularImpuestos();
   

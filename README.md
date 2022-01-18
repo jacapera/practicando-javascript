@@ -1,6 +1,12 @@
 # practicando-javascript
 En este repositorio se realizaran distintos ejercicios para desarrollar destreza en programacion con JavaScript
-se deberan ejecutar desde la consola de un navegador
+se deberan ejecutar desde la consola de un navegador.
+
+comandos para actualizar mi repositorio
+git status  (me permite saber detalles de los comando que voy ejecutando)
+git add . 
+git commit -m"comentario descriptivo"
+git push
 ...
 
 # Ejercicio 3
