@@ -43,12 +43,15 @@ El BMI se calcula con la siguiente fórmula:
 peso / altura^2
 Escribe un programa que le pida al usuario su peso y su altura para calcular su BMI e imprima la frase "Tu BMI es X".
 */
-function calcularBMI(peso = prompt("Ingrese su peso"),altura = prompt("Igrese su altura")){
-    const BMI = peso / (altura**2);
-    console.log(`Su peso es: ${peso}kg`);
-    console.log(`Su altura es: ${altura}cm`)
-    console.log(`Su MBI es: ${BMI}`);
-    return BMI;
+function calcularBMI(){
+  const peso = document.getElementById("peso");
+  const valuePeso = peso.value;
+  const altura = document.getElementById("altura");
+  const valueAltura = altura.value;
+  const BMI = valuePeso / (valueAltura**2);
+  const resulEjercicio4 = document.getElementById("resulEjercicio4");
+  resulEjercicio4.innerText = "Su BMI es: " + BMI;
+  console.log(BMI);
 }
 // console.log(calcularBMI());
 
